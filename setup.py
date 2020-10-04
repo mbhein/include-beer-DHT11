@@ -23,12 +23,12 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["reader"],
+    packages=["DHT11"],
     include_package_data=True,
     install_requires=["adafruit-circuitpython-dht"],
     entry_points={
         "console_scripts": [
-            "include-beer-DHT11=DHT11.__main__:main",
+            "include-beer-DHT11=DHT11",
         ]
     },
 )
