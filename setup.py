@@ -26,9 +26,4 @@ setup(
     packages=["DHT11"],
     include_package_data=True,
     install_requires=["adafruit-circuitpython-dht"],
-    entry_points={
-        "console_scripts": [
-            "include-beer-DHT11=DHT11",
-        ]
-    },
 )
