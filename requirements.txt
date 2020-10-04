@@ -1,0 +1,4 @@
+# Requirements installed for development
+adafruit-blinka
+adafruit-circuitpython-dht
+board
