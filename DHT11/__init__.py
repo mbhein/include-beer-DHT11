@@ -1,5 +1,5 @@
 # Version of the include-beer-DHT11 package
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 import board
 import adafruit_dht
@@ -34,9 +34,11 @@ def read(data_pin, temperature_scale='f'):
         if temperature_scale == 'f':
             temperature = temperature * (9 / 5) + 32
         humidity = dht_device.humidity
+        dht_device.exit()
         return temperature, humidity
     except RuntimeError as error:
         # TODO: figure out better error handling and message return
         # print('Errors happen fairly often, DHT''s are hard to read, just keep going after you read the following error msg:')
         # print(error.args[0])
+        dht_device.exit()
         return "DHT read error", error.args[0]
