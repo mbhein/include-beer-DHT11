@@ -1,8 +1,8 @@
 # Version of the include-beer-DHT11 package
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 import board
-import adafruit_blinka
+import adafruit_dht
 import sys
 
 def read(data_pin, temperature_scale='f'):
